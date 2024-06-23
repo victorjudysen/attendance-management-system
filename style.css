@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,6 @@
 
 .heading {
     width: 100%;
-    /* height: 100px; */
     background-color: green;
     font-size: 48px;
     color: white;
@@ -23,48 +22,40 @@
     font-weight: 700;
 }
 
-
 /* -------------- login form -------------- */
-
 .login {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
-    grid-gap: 20px;
+    display: flex;
+    height: 400px;
     margin: 20px;
-
 }
 
 .image {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    background-image: url('./images/udom.jpeg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 .right {
+    width: 50%;
     background-color: rgb(189, 211, 218);
-    border-radius: 20px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.login_head{
-    width: 65%;
-    margin: auto;
-    margin-top: 40px;
+.login_head {
     font-size: 38px;
     background-color: rgb(21, 129, 21);
     color: white;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 #form {
@@ -72,10 +63,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;    
+    width: 80%;
 }
 
-#form input {      
+#form input {
+    width: 100%;
     padding: 12px 20px;
     margin: 10px 0;
     display: inline-block;
@@ -90,8 +82,7 @@
     border-radius: 5px;
 }
 
-  /* -------------- student form -------------- */
-
+/* -------------- student form -------------- */
 .studentData {
     width: 100%;
     background-color: green;
@@ -107,7 +98,7 @@
 }
 
 #form1 input {
-    padding: 10px ;
+    padding: 10px;
     margin-right: 15px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -118,7 +109,6 @@
 #form1 input:focus {
     outline: none;
 }
-
 
 table, td, th {
     border: 1px solid #ddd;
@@ -164,8 +154,7 @@ tr > th {
 .td6 > button:nth-child(2) {
     background-color: red;
 }
-wh
+
 #absent {
     background-color: red;
 }
-
