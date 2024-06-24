@@ -1,5 +1,3 @@
-
-
 document.querySelector("#form").addEventListener("submit", submitFun);
 
 
@@ -8,11 +6,11 @@ function submitFun(elme) {
     username = document.querySelector("#name").value;
     password =  document.querySelector("#password").value;
 
-    if (username == "admin" && password == "admin") {
+    if (username == "group" && password == "five") {
         window.location.href = "student.html";
     } else {
         alert("Invalid username or password");
         document.querySelector("#form").reset();
     }
-
 }
+

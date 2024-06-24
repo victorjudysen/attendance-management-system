@@ -155,6 +155,10 @@ tr > th {
     background-color: red;
 }
 
+.td6  > button:nth-child(3) {
+    background-color: black;
+}
+
 #absent {
     background-color: red;
 }

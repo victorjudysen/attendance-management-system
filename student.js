@@ -60,7 +60,7 @@ function displayFun(studentDataArr) {
         });
 
         var btn3 = document.createElement("button");
-        btn3.innerHTML = "Remove";
+        btn3.innerHTML = "D";
         btn3.addEventListener("click", function () 
         {
             studentDataArr.splice(index, 1);
@@ -79,4 +79,5 @@ function displayFun(studentDataArr) {
     });
 
 }
+
 displayFun(studentDataArr);
